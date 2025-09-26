@@ -1,5 +1,5 @@
 //
-// Created by kali on 9/25/25.
+// Created by Rafael Hartilek on 9/25/25.
 //
 
 #ifndef PRINTOUT_PRINTOUT_H

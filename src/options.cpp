@@ -1,14 +1,14 @@
 //
-// Created by kali on 9/25/25.
+// Created by Rafael Hartilek on 9/25/25.
 //
 
 #include "../include/options.h"
 #include <iostream>
 #include <string>
 #include <cstdlib>
-
 #include "printout.h"
 
+// Prints out the usage info
 static void print_usage_and_exit() {
     std::cerr <<
         "Usage: printout [-c] [-w] <file>\n"
@@ -17,9 +17,12 @@ static void print_usage_and_exit() {
     std::exit(1);
 }
 
+// Handles flags, and set options up for execution
 Options parse_args(int argc, char* argv[]) {
+    // Instantiates an object of Options that will contain the parameters
     Options opts;
 
+    // Verifies if amount of arguments is possible
     if (argc < 2) {
         print_usage_and_exit();
     }
@@ -46,6 +49,9 @@ Options parse_args(int argc, char* argv[]) {
         print_usage_and_exit();
     }
 
+    // Places the files paths to the array to be processed (only one for now)
     opts.files.emplace_back(argv[i]);
+
+    // Returns options with all flags and paths ready
     return opts;
 }
