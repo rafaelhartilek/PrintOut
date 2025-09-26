@@ -1,0 +1,3 @@
+/home/kali/Desktop/printout/build/CMakeFiles/printout.dir
+/home/kali/Desktop/printout/build/CMakeFiles/edit_cache.dir
+/home/kali/Desktop/printout/build/CMakeFiles/rebuild_cache.dir
